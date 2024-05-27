@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.andres</groupId>
+    <artifactId>util-collection</artifactId>
+    <version>{util.collection.version}</version>
+    <packaging>pom</packaging>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <scala.version>2.11</scala.version>
+        <log4j.version>2.23.1</log4j.version>
+        <util.collection.version>0.1</util.collection.version>
+    </properties>
+
+    <modules>
+        <module>util-log</module>
+        <module>util-collection-content</module>
+    </modules>
+    <build>
+        <finalName>${project.artifactId}-${util.collection.version}</finalName>
+    </build>
+</project>
