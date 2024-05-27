@@ -9,7 +9,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>util-log</artifactId>
-    <packaging>pom</packaging>
     <dependencies>
         <!--  log4j     -->
         <dependency>

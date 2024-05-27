@@ -11,16 +11,17 @@ import javax.imageio.ImageWriter;
 import javax.imageio.stream.ImageOutputStream;
 
 /**
+ * 图片工具
  * @author hjs
  */
-public class ImageToGifConverter {
+public class ImageUtil {
 
-    public static void main(String[] args) {
-        // 要转换的图片路径
-        String imagePath = "D:\\HuaweiMoveData\\Users\\HUAWEI\\Desktop\\微信图片_20240527092841.jpg";
-        convertImageToGif(imagePath);
-    }
+    private ImageUtil(){}
 
+    /**
+     * 图片转Gif格式
+     * @param imagePath 图片文件路径
+     */
     public static void convertImageToGif(String imagePath) {
         try {
             BufferedImage image = ImageIO.read(new File(imagePath));

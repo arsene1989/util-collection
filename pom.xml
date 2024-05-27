@@ -13,6 +13,7 @@
         <scala.version>2.11</scala.version>
         <log4j.version>2.23.1</log4j.version>
         <util.collection.version>0.1</util.collection.version>
+        <junit.version>4.13.2</junit.version>
     </properties>
 
     <modules>
