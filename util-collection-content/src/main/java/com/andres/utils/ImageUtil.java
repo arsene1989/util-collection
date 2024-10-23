@@ -32,13 +32,13 @@ public class ImageUtil {
 
             // 创建输出流
             FileOutputStream outputStream = new FileOutputStream("output.gif");
-            ImageOutputStream ios = ImageIO.createImageOutputStream(outputStream);
+            ImageOutputStream imageOutputStream = ImageIO.createImageOutputStream(outputStream);
 
             // 开始写入 GIF
-            writer.setOutput(ios);
+            writer.setOutput(imageOutputStream);
             writer.write(null, new javax.imageio.IIOImage(image, null, null), param);
 
-            ios.close();
+            imageOutputStream.close();
             outputStream.close();
         } catch (IOException e) {
             e.printStackTrace();

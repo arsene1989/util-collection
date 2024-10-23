@@ -14,7 +14,8 @@ public class OperationSystemUtil {
      * @return boolean
      */
     public static boolean isMac(){
-        return OperationSystemConstants.MAC_OS_X.equals(System.getProperty("os.name"));
+        String os = System.getProperty("os.name");
+        return OperationSystemConstants.MAC_OS_X.equals(os);
     }
 
     /**

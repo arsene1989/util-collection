@@ -10,7 +10,7 @@ public class ImageUtilTest {
 
     @Test
     public void testImageConvertGif(){
-        String imagePath = "D:\\HuaweiMoveData\\Users\\HUAWEI\\Desktop\\微信图片_20240527092841.jpg";
+        String imagePath = "F:\\S\\软件设计师\\pdf\\综合知识\\BB1n9vIn.jpg";
         ImageUtil.convertImageToGif(imagePath);
     }
 }
